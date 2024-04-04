@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font dos icones das cetinhas os depoimentos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+<!--font dos icones de estrelas-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--link css normal-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Cliente</title>
+</head>
+<body>
+<!--COMEÇO DA TELA PRINCIPAL-->
+    <header id="volta" > <!--colocou a imagem aqui mesmo no inicio -->
+        <!--COMEÇO Do container-->
+        <div class="container">
+          <nav>
+            <a href="index.html">
+                <img src="assets/img/lobo branco.png" alt="Logo">
+            </a>
+            <ul class="ul">
+                <a href="index.html">Home </a>
+                <a href="#serviços" onclick="closeMenu()" >Serviços</a>
+                <a href="#Projetos" onclick="closeMenu()" >Projetos</a>
+                <a href="#avaliações" onclick="closeMenu()" >Avaliações</a>
+                <a class="btn" href="#contato" onclick="closeMenu()">Contato</a>  <!--colocar o link do whatswhapp do meu pai aqui-->
+                <div class="close-icon" onclick="closeMenu()">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+            </ul>
+            <div class="menu-icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+            <!--formulario-->
+
+<section class="contato">
+    <div class="container-form2">
+        <div class="contato-info2">
+            <div class="left-site2">
+                    <p class="headline2"><b>PRONTO PARA DUPLICAR</b> O FATURAMENTO DO SEU ESCRITORIO <b>DE ARQUITETURA?</b></p>
+                    <P class="subheadline2"><b>Ultilizando o processo de atração e interesse</b> você pode ver o faturamento do seu escritorio <b>duplicar!</b></P>
+            </div>
+            <div class="right-site2">
+                <p><b>Preencha o formulário</b> para ligarmos e conseguirmos entrar em contato com você!</p>
+                <form action="https://api.sheetmonkey.io/form/5rrA6y2XCxxPGuVWQBDE9Y" method="post" class="card"><!--mudar o email que vai receber os leads-->
+                    <input type="text" name="name" placeholder="Qual é o seu nome?" required>
+                    <input type="email" name="email" placeholder="Qual é o seu Gmail?" required>
+                    <input type="text" name="phone" placeholder="Qual é o seu WhatsApp?" required>
+                    <input type="text" name="message" placeholder="Qual é o Instagram da sua empresa?" required>
+                    <button class="btn-form2"><strong>RECEBA O CONTATO DA LOBO</strong></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+        </div>
+        <!--termino do container-->
+    </header>
+<!--termino DA TELA PRINCIPAL-->
+
+<!--começo da 1 parte do texto e imagem-->
+<section id="serviços" class="faca-mais">
+    <div class="text-container">
+        <h1 class="foreground-title"><b class="rosa1">NOSSOS </b>SERVIÇOS</h1>
+        <p class="background-text"><strong>serviços</strong></p>
+      </div>
+    <!--começo do container-->
+        <div class="container-img-txt"><!--ver no css a configuração do container-->
+            <div class="faca-mais-text">
+                <h3>Projetos, Consultoria e Execução de obra</h3>
+                <p class="ptxtimg1">Atuamos na área de projetos residenciais,
+                    comerciais e corporativos, com um
+                    escopo personalizado para suprir as
+                    necessidades de cada cliente . Trabalhamos
+                    com projetos arquitetônicos e de interiores
+                    tanto para quem está construindo do zero
+                    quanto para quem está reformando.</p>
+                    <a href="#volta" class="btn">Entrar em contato</a><!--botão em baixo - colocar o link dop whatsapp-->
+            </div>
+            <div class="faca-mais-img">
+                <img src="assets/img/diferenciais-1.png" alt="">
+            </div>
+        </div>
+        <!--termino do container-->
+    </section>
+    <!--fim da 1 parte do texto e imagem-->
+
+    <!--começo da 2 parte do texto e imagem-->
+    <section class="faca-mais2">
+        <div class="text-container2">
+            <h1 class="foreground-title2"><b class="rosa1">NOSSOS </b>DIFERENCIAIS</h1>
+            <p class="background-text2"><strong>diferencial</strong></p>
+          </div>
+    <!--começo do container-->
+        <div class="container-img-txt"><!--ver no css a configuração do container-->
+            <div class="faca-mais-img2">
+                <img src="assets/img/diferenciais2-.png" alt="">
+            </div>
+            <div class="faca-mais-text2">
+                <h3>Minimizando imprevistos e maximizando a satisfação do cliente</h3>
+                <p class="ptxtimg1">Prezamos por descomplicar o processo de
+                    projeto e obra para o cliente, fornecendo uma compreensão
+                    total do projeto antes da execução e apoio do início ao
+                    fim, assim minimizando imprevistos e maximizando a
+                    satisfação do cliente.</p>
+                <a href="#volta" class="btn">Entrar em contato</a><!--botão em baixo - colocar o link dop whatsapp-->
+            </div>
+        </div> 
+        <!--termino do container-->
+        <div id="Projetos" class="text-container5">
+            <h1 class="foreground-title5"><b class="rosa1">NOSSOS </b>PROJETOS</h1>
+            <p class="background-text5"><strong>projetos</strong></p>
+          </div>
+    </section>
+    <!--fim da 2 parte do texto e imagem-->
+
+<!--começo do portifolio-->
+<section class="portifolio">
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"><img src="assets/img/exemplo 01.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="assets/img/exemplo 02.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="assets/img/exemplo 01.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="assets/img/exemplo 02.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="assets/img/exemplo 01.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="assets/img/exemplo 02.jpg" alt="img" draggable="false"></div>
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+   </section>
+<!--fim portifolio-->
+
+<!--começo de sobre-->
+<section class="sobre">
+    <div class="text-container3">
+        <h1 class="foreground-title3"><b class="rosa1">SOBRE A </b>ZAP</h1>
+        <p class="background-text3"><strong>sobre</strong></p>
+      </div>
+    <!--começo do container-->
+        <div class="container-img-txt3"><!--ver no css a configuração do container-->
+            <div class="faca-mais-text3">
+                <h3>Projetos, Consultoria e Execução de obra</h3>
+                <p class="ptxtimg3">Atuamos na área de projetos residenciais,
+                    comerciais e corporativos, com um
+                    escopo personalizado para suprir as
+                    necessidades de cada cliente . Trabalhamos
+                    com projetos arquitetônicos e de interiores
+                    tanto para quem está construindo do zero
+                    quanto para quem está reformando.</p>
+                    <a href="#volta" class="btn">Entrar em contato</a><!--botão em baixo - colocar o link dop whatsapp-->
+            </div>
+            <div class="faca-mais-img3">
+                <img src="assets/img/diferenciais-1.png" alt="">
+            </div>
+        </div>
+        <!--termino do container-->
+    </section>
+    <!--fim de sobre-->
+
+    <!--começo do depoimentos-->
+<!--começo depoimentos-->
+<section id="avaliações" class="depoimentos">
+    <div class="text-container4">
+        <h1 class="foreground-title4"><b class="rosa1">NOSSAS </b>AVALIAÇÕES</h1>
+        <p class="background-text4"><strong>avaliações</strong></p>
+      </div>
+    <!--começo do container -->
+        <div class="container">
+            <div class="cards">
+                <!--CARD ITEM1 -->
+                <div class="card-item">
+                    <img src="assets/img/img2.jpg" alt="matheus">
+                    <p class="nome-user"> nome aqui</p>
+                    <p class="depoimento-user">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis non, maiores aut autem beatae quae?</p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!--CARD ITEM2 -->
+                <div class="card-item">
+                    <img src="assets/img/img2.jpg" alt="matheus">
+                    <p class="nome-user"> nome aqui</p>
+                    <p class="depoimento-user">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi provident beatae delectus natus autem repudiandae?</p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!--CARD ITEM3 -->
+                <div class="card-item">
+                    <img src="assets/img/img2.jpg" alt="matheus">
+                    <p class="nome-user"> nome aqui</p>
+                    <p class="depoimento-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde ab veritatis explicabo minima sunt!</p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fim do container -->
+    </section>
+    <!--fim depoimentos-->
+    <!--fim do depoimentos-->
+
+    <!--começo de contato-->
+<section class="contat">
+  <div class="text-container6">
+    <h1 class="foreground-title6"><b class="rosa1">NOSSO </b>CONTATO</h1>
+    <p class="background-text6"><strong>contato</strong></p>
+  </div>
+  <div class="contacto-info">
+  <div class="left-side">
+    <div>
+      <i class="fa fa-whatsapp"></i>
+      <p>21 96814-0113</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p>meuemailcomrciallobo@gmail.com</p>
+    </div>
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p>Rua a esperança, n°286, camboata, RJ</p>
+    </div>
+    <div>
+      <i class="fa fa-instagram"></i>
+      <p>@a.assessorialobo</p>
+    </div>
+  </div>
+  
+  <div class="right-side">
+    <a href="#volta" class="btn">Entrar em contato</a><!--botão em baixo - colocar o link dop whatsapp-->
+  </div>
+</div>
+</section>
+    <!--fim de contato-->
+
+<!--começo footer/rodapé-->
+ <footer id="contato" class="footer">
+    <div class="container">
+        <div class="textos">
+            <p>Copyright 2023 - Todos os direitos reservados</p>
+            <p>Feito por Lobo Mídia</p>
+        </div>
+    </div>
+ </footer>
+<!--fim footer/rodapé-->
+<!-- Swiper JS -->
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

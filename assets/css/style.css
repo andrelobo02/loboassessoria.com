@@ -1,0 +1,1072 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat&display=swap');
+/* confg zera tudo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{ /* faz os botões que mandam para cima e para baixo na pagina irem mais devagar*/
+  scroll-behavior: smooth;
+}
+
+/* config zera tudo fim*/
+
+body{
+    background-color: #f1f6fc31;
+}
+
+/* configuração section e footer*/
+section, footer {
+    padding: 54px 0;
+}
+
+/* configuração titulo 01*/
+h3{
+    font-size: 40px;
+}
+
+/* configuração paragrafo 01*/
+p{
+    color: #0000009c; /* cor do testinho*/
+}
+
+.rosa1{
+  color: #C5A47E;
+}
+
+/* configuração container*/
+
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+
+.btn:hover{
+    background-color: #3280db;
+}
+
+/* configurando imagem de fundo principal*/
+header{
+    background-image: url(../img/background-home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* fixando a imagem idenpedente da rolagem*/
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+/* TAMANHO DA LOGO NO INICIO DA PAGINA*/
+nav a img{
+  width: 230px;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+}
+
+nav ul a{
+  color: white;
+  margin: 0 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+}
+
+/* efeito em baixo das opções de menu*/
+nav ul a:not(.btn):after{
+  content: "";
+  background-color: #4f9cf9;
+  height: 3px;
+  width: 0%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+nav ul a:hover::after{
+  width: 100%
+}
+
+/* começo configurando menu mobile*/
+nav .menu-icon{
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  display: none;
+}
+
+nav .close-icon{
+  display: none;
+  font-size: 30px;
+  color: white;
+}
+
+/* fim configurando menu mobile*/
+
+/* formulario e letras do inicio*/
+
+.contato{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 0px 0px 0px 0px;
+  background-image: url(../img/fundo\ form.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-form2{
+  max-width: 1880px;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+}
+
+.contato-info2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  padding: 40px 0px 50px 0px;
+}
+
+.contato-info2 .left-site2{
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  border-radius: 14px;
+  margin-right: 50px;
+  height: fit-content;  /* até aqui colocar no FORMULARIO*/
+}
+
+.contato-info2 .left-site2 div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contato-info2 .left-site2 img{
+  width: 250px;
+}
+
+.contato-info2 .left-site2 p{
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+}
+
+.contato-info2 .left-site2 .subheadline2{
+  font-size: 19.2px;
+  padding: 12px 0px 0px 0px;;
+  letter-spacing: 3px;
+}
+
+
+/* COMEÇO DO formulario*/
+.contato-info2 .right-site2{
+  width: 90%; /* isso diz quanto do espaço disponivel o negocio vai ocupar*/
+  padding: 20px 20px 20px 20px;
+  margin: 0px 0px 0px 100px;
+  background: linear-gradient(to top, #173953, #184b88, #173953); /* daqui + FORMULARIO*/
+  border-radius: 14px;
+  margin-right: 5px;
+  height: fit-content;
+  border: 1px solid #000000;
+}
+
+.contato-info2 .right-site2 p{
+  color: rgb(255, 255, 255);
+  padding: 0px 0px 16px 0px;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.contato-info2 .right-site2 input{
+  display: block;
+  width: 100%; /* isso diz quanto do espaço disponivel o negocio vai ocupar*/
+  margin-bottom: 10px;
+  height: 55px;
+  padding: 15px;
+  border-radius: 9px;
+  transition: 0.3s;
+  border: 1px solid #f1f1f1;
+  color: #212121;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.contato-info2 .right-site2 textarea{
+  display: block;
+  width: 100%; /* isso diz quanto do espaço disponivel o negocio vai ocupar*/
+  margin-bottom: 10px;
+  height: 55px;
+  padding: 15px;
+  border-radius: 9px;
+  transition: 0.3s;
+  border: 1px solid #f1f1f1;
+  color: #212121;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.right-site2 .btn-form2{
+  display: block;
+  width: 100%; /* isso diz quanto do espaço disponivel o negocio vai ocupar*/
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 9px;
+  transition: 0.3s;
+  border: 0.8px solid #4f9cf9;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 23px;
+  background-color: #4f9cf9;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.right-site2  .btn-form2:hover {
+  background-color: #3280db;
+}
+
+
+/*fim das letras e formulario*/
+
+/* começo config completa do texto e imagem */
+
+.faca-mais{
+    background-color: #ffffff;
+    padding: 54px 0px 0px 0px; /*mudar isso no cell(ainda não foi mudado*/
+}
+
+.text-container {
+  position: relative;
+  text-align: center;
+}
+
+.foreground-title {
+  letter-spacing: 3px;
+  color: #173953;
+  font-size: 28px;
+  position: relative;
+  z-index: 2; /* Coloca o título na frente do texto de fundo */
+}
+
+.background-text {
+  font-size: 90px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-110%, -57%); /*moificar isso no cell(ainda não foi modificado)*/
+  z-index: 1; /* Coloca o texto de fundo atrás do título principal */
+}
+
+.faca-mais2{
+  background-color: #ffffff;
+  padding: 0px 0px 54px 0px; /*MUDAR ISSO NO CELL, NÃO MUDOU AINDA)*/
+
+}
+
+.text-container2 {
+    position: relative;
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+  }
+  
+  .foreground-title2 {
+    letter-spacing: 3px;
+    color: #173953;
+    font-size: 28px;
+    position: relative;
+    z-index: 2; /* Coloca o título na frente do texto de fundo */
+  }
+  
+  .background-text2 {
+    font-size: 90px;
+    color: #f7f7f7; /* Cor do texto de fundo */
+    pointer-events: none; /* Impede que o texto de fundo seja interativo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -57%); /*moificar isso no cell(ainda não foi modificado)*/
+    z-index: 1; /* Coloca o texto de fundo atrás do título principal */
+  }
+
+  .container-img-txt{
+    background-image: url(../img/fundo\ img-text_Prancheta\ 1.png);
+    background-size: cover;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+}
+
+.faca-mais-text {
+    width: 100%;
+    padding: 0px 0px 0px 0px; /* MUDAR ISSO NO CELL(AINDA NÃO FOI MUDADO) */
+    justify-content: space-around;
+}
+
+.faca-mais-text h3{
+  letter-spacing: 3px;
+    font-size: 25px;
+    color: #173953;
+}
+
+.faca-mais-text .ptxtimg1{
+    margin: 15px 5px 10px 0;
+    font-size: 18px;
+}
+
+.faca-mais-img{
+    width: 100%;
+}
+
+.faca-mais-img img{
+    width: 100%;
+}
+
+.faca-mais .titulo02{
+    text-align: center;
+    margin-bottom: 20PX;
+    padding: 60px 0px 25px 0px;
+}
+.faca-mais-text2 {
+    width: 100%;
+    padding: 0px 0px 0px 10px; /* MUDAR ISSO NO CELL(AINDA NÃO FOI MUDADO) */
+    justify-content: space-around;
+}
+
+.faca-mais-text2 h3{
+  letter-spacing: 3px;
+    font-size: 25px;
+    color: #173953;
+}
+
+.faca-mais-text2 .ptxtimg1{
+    margin: 15px 0px 10px 0px;
+    font-size: 18px;
+}
+
+.faca-mais-img2{
+    width: 100%;
+    padding: 0px 15px 0px 0px;
+}
+
+.faca-mais-img2 img{
+    width: 100%;
+}
+
+.text-container5 {
+  position: relative;
+  text-align: center;
+  margin: 60px 0px 30px 0px;
+}
+
+.foreground-title5 {
+  letter-spacing: 3px;
+  color: #173953;
+  font-size: 28px;
+  position: relative;
+  z-index: 2; /* Coloca o título na frente do texto de fundo */
+}
+
+.background-text5 {
+  font-size: 90px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-114%, -57%); /*moificar isso no cell(ainda não foi modificado)*/
+  z-index: 1; /* Coloca o texto de fundo atrás do título principal */
+}
+
+/* fim config completa do texto e imagem*/
+
+/* começo config portifolio */
+.portifolio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px; /*bordar da sesão*/
+  background-color: rgb(255, 255, 255);
+  /*background: linear-gradient(to left top, #031a9a, #8b53ff); /*isso cria um backgroud de 2 cores*/
+}
+.wrapper {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+grid-auto-flow: column;
+grid-auto-columns: calc((100% / 3) - 12px);
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+gap: 16px;
+scroll-behavior: smooth;
+scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  padding-bottom: 15px;
+  cursor: pointer;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.carousel .card .img {
+  height: 500px;
+  width: 100%;
+}
+
+.card .img img {
+  width: 100%;
+  height: 326px;
+  object-fit: cover;
+  
+}
+/* fim config portifolio */
+
+/*começo de sobre*/
+.sobre{
+  background-color: #ffffff;
+  padding: 60px 0px 0px 0px; /*mudar isso no cell(ainda não foi mudado*/
+}
+
+.text-container3 {
+position: relative;
+text-align: center;
+margin: 0px 0px 30px 0px;
+}
+
+.foreground-title3 {
+  letter-spacing: 3px;
+  color: #173953;
+font-size: 28px;
+position: relative;
+z-index: 2; /* Coloca o título na frente do texto de fundo */
+}
+
+.background-text3 {
+font-size: 90px;
+color: #f7f7f7; /* Cor do texto de fundo */
+pointer-events: none; /* Impede que o texto de fundo seja interativo */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-110%, -57%); /*moificar isso no cell(ainda não foi modificado)*/
+z-index: 1; /* Coloca o texto de fundo atrás do título principal */
+}
+
+.container-img-txt3{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+}
+
+.faca-mais-text3 {
+  width: 100%;
+  padding: 0px 0px 0px 0px; /* MUDAR ISSO NO CELL(AINDA NÃO FOI MUDADO) */
+  justify-content: space-around;
+}
+
+.faca-mais-text3 h3{
+  font-size: 25px;
+  color: #173953;
+}
+
+.faca-mais-text3 .ptxtimg3{
+  margin: 15px 5px 10px 0;
+  font-size: 18px;
+}
+
+.faca-mais-img3{
+  width: 100%;
+}
+
+.faca-mais-img3 img{
+  width: 100%;
+}
+
+
+/* começo config depoimentos */
+
+.depoimentos{
+  background-color: #ffffff;
+
+}
+
+.text-container4 {
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 60px 0px;
+}
+
+.foreground-title4 {
+  letter-spacing: 3px;
+  color: #173953;
+  font-size: 28px;
+  position: relative;
+  z-index: 2; /* Coloca o título na frente do texto de fundo */
+}
+
+.background-text4 {
+  font-size: 90px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -85%); /*moificar isso no cell(ainda não foi modificado)*/
+  z-index: 1; /* Coloca o texto de fundo atrás do título principal */
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-item{
+  background-color: #d3e6fd;
+  margin: 15px;
+  border-radius: 14px;
+  text-align: center;
+  width: 350px;
+  transition: 0.3s; /* tempo da transição de cor */
+}
+
+.card-item img{
+  border-radius: 100%;
+  width: 80px;
+  display: block;
+  margin: 10px auto;
+}
+
+.card-item .nome-user{
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.card-item .depoimento-user{
+  font-size: 15px;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.card-item .estrelas{
+  margin: 15px 0;
+  border-top: 2px solid #71767a23;
+}
+
+.card-item .estrelas i{
+  color: #4f9cf9;
+  margin-top: 15px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+/* isso aqui fazer o card mudar de cor */
+.card-item:hover{
+  background-color: #4f9cf9;
+}
+
+.card-item:hover .nome-user, /* isso que faz as coisas fizarem brancas */
+.card-item:hover .depoimento-user,
+.card-item:hover .estrelas i{
+  color: white;
+}
+/* fim config depoimentos */
+
+/*começo de FAQ*/
+.contat{
+  background: #ffffff;
+}
+
+.text-container6 {
+  position: relative;
+  text-align: center;
+  margin: 0px 0px 60px 0px;
+}
+
+.foreground-title6 {
+  letter-spacing: 3px;
+  color: #173953;
+  font-size: 28px;
+  position: relative;
+  z-index: 2; /* Coloca o título na frente do texto de fundo */
+}
+
+.background-text6 {
+  font-size: 90px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -57%); /*moificar isso no cell(ainda não foi modificado)*/
+  z-index: 1; /* Coloca o texto de fundo atrás do título principal */
+}
+
+.contacto-info{
+  background-image: url(../img/fundo\ img-text_Prancheta\ 1.png);
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacto-info .left-side{
+  width: 100%;
+  padding: 30px;
+  border-radius: 14px;
+  margin-right: 50px;
+  height: fit-content;
+}
+
+.contacto-info .left-side div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contacto-info .left-side div i{
+  font-size: 24px;
+  margin-right: 20px;
+  color: #173953;
+}
+
+.contacto-info .left-side p{
+  font-size: 17px;
+}
+
+.contacto-info .right-side{
+  width: 50%;
+}
+
+/*fim de FAQ*/
+
+/* começo footer/rodapés */
+
+.footer{
+    background-color: #4f9cf9;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+/* fim footer/rodapés */
+
+@media(max-width: 830px){
+/* começo menu mobile */
+.ul{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #184b88;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(0% at 100% 0);
+  transition: 0.7s;
+}   
+
+.ul.open{
+  clip-path: circle(141.4% at 100% 0);
+}
+
+.ul a{
+  margin: 10px 0;
+  font-size: 16 px;
+}
+
+nav a img{
+  width: 160px;
+}
+
+nav .menu-icon{
+  display: block;
+ }
+
+nav .close-icon{
+  display: block;
+  position: absolute;
+  top:46px;
+  right: 28px;
+}
+/* fim menu mobile */
+
+/* começo do letras e formulario RESPONSIVO*/
+
+.contato{
+  padding: 0px 0px 0px 0px;
+}
+
+.container-form2{
+  margin: 0px 5px 0px 5px;
+  padding: 0px 0;
+}
+
+.contato .contato-info2{
+  flex-direction: column;
+}
+
+.contato-info2 .left-site2{
+  margin: 0px 0px 20px 0px;
+}
+
+.contato-info2 .left-site2 img{
+  width: 170px;
+}
+
+.contato-info2 .left-site2 p{
+  font-size: 29px;
+}
+
+.contato-info2 .left-site2 .subheadline2{
+  font-size: 19px;
+}
+
+.contato-info2 .right-site2,
+.contato-info2 .left-site2{
+  width: 100%;
+}
+
+.right-site2 .btn-form2{
+  font-size: 20px;
+}
+
+.contato-info2 .right-site2{
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+  margin-right: 0px;
+}
+
+.contato-info2 .right-site2 p{
+   padding: 0px 0px 16px 0px;
+   font-size: 20px;
+}
+
+.container-form2{
+  text-align: center;
+}
+/* fim do letras e formulario RESPONSIVO*/
+
+
+/* imagem + texto RESPONSIVO*/
+
+.text-container {
+  margin: 0px 0px 40px 0px;
+}
+
+.foreground-title {
+  font-size: 25px;
+  position: relative;
+}
+
+.background-text {
+  font-size: 70px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-65%, -63%); /*moificar isso no cell(ainda não foi modificado)*/
+}
+
+.text-container2 {
+  margin: 50px 0px 40px 0px;
+}
+
+.foreground-title2 {
+  font-size: 25px;
+  position: relative;
+}
+
+.background-text2 {
+  font-size: 60px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-62%, -63%); /*moificar isso no cell(ainda não foi modificado)*/
+}
+
+.text-container5 {
+  margin: 60px 0px 10px 0px;
+}
+
+.foreground-title5 {
+  font-size: 25px;
+  position: relative;
+}
+
+.background-text5 {
+  font-size: 60px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -63%); /*moificar isso no cell(ainda não foi modificado)*/
+}
+
+.faca-mais .faca-mais-text{
+    margin-top: 10px;
+    padding: 0 8px;
+    order: 1;
+    text-align: center;
+}
+
+.container-img-txt{
+    flex-direction: column;
+    padding: 0px 8px;
+}
+
+.faca-mais .faca-mais-text h3{
+    font-size: 5px;
+}
+
+.faca-mais .faca-mais-text p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.faca-mais-text,
+.faca-mais-img{
+    width: 100%;
+}
+
+.faca-mais2 .faca-mais-text2{
+  margin-top: 10px;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.faca-mais2 .faca-mais-text2 p{
+  font-size: 18px;
+  text-align: justify;
+}
+/* fim da imagem + texto RESPONSIVO*/
+
+/*começo do portifolio*/
+.wrapper .carousel{
+  grid-auto-columns: calc((100% / 2) - 9px);
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+  }
+
+  /*fim do portifolio*/
+
+/* começo de sobre*/
+
+.sobre{
+padding: 50px 0px 0px 0px;
+}
+
+.text-container3 {
+  margin: 0px 0px 40px 0px;
+}
+
+.foreground-title3 {
+  font-size: 25px;
+  position: relative;
+}
+
+.background-text3 {
+  font-size: 60px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-95%, -63%); /*moificar isso no cell(ainda não foi modificado)*/
+}
+.text-container4 {
+  margin: 10px 0px 0px 0px;
+}
+
+.foreground-title4 {
+  font-size: 25px;
+  position: relative;
+}
+
+.background-text4 {
+  font-size: 60px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-64%, -100%); /*moificar isso no cell(ainda não foi modificado)*/
+}
+
+.sobre .faca-mais-text3 {
+  margin: 10px 0px 35px;
+  padding: 0px;
+  order: 1;
+  text-align: center;
+}
+
+.sobre .faca-mais-text3 p{
+  margin: 10px 0px 35px;
+  padding: 0px;
+  text-align: justify;
+}
+
+.container-img-txt3 {
+  flex-direction: column;
+}
+
+.faca-mais .faca-mais-text h3 {
+  font-size: 30px;
+}
+
+.faca-mais-text3,
+.faca-mais-img3{
+  width: 100%;
+}
+/*fim de sobre*/
+
+/*começo depoimentos */
+
+.depoimentos{
+
+  padding: 15px 0px 0px;
+}
+
+.slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+
+/*fim depoimentos */
+
+/*começo de contato */
+.text-container6 {
+  margin: 0px 0px 10px 0px;
+}
+
+.foreground-title6 {
+  font-size: 25px;
+  position: relative;
+}
+
+.background-text6 {
+  font-size: 60px;
+  color: #f7f7f7; /* Cor do texto de fundo */
+  pointer-events: none; /* Impede que o texto de fundo seja interativo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -63%); /*moificar isso no cell(ainda não foi modificado)*/
+}
+
+.contacto-info{
+  flex-direction: column;
+  text-align: center;
+}
+
+.contacto-info .left-side{
+  text-align: left;
+}
+
+.contacto-info .right-side,
+.contacto-info .left-side{
+  width: 100%;
+}
+/*fim de contato */
+
+
+} 
